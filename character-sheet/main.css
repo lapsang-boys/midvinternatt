@@ -47,10 +47,31 @@ section > div {
 	-3px 3px 2px 2px #17131449;
 }
 
+/* ============= Headings ============= */
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Cinzel';
 }
 
+h2 {
+	padding: 0.5em 2em;
+	box-sizing: border-box;
+	border-bottom: 1px solid black;
+	margin: 0;
+}
+
+h3 {
+	margin: 0.5em 0;
+	font-size: 1em;
+}
+
+/* ============= Images ============= */
+
+.transparent-icon {
+	width: 50%;
+	opacity: 0.20;
+	flex: 1;
+}
 
 /* ============= Page 1 ============= */
 
@@ -78,16 +99,6 @@ h1, h2, h3, h4, h5, h6 {
 	align-items: center;
 }
 
-#stats h3 {
-	margin: 0.5em 0;
-	font-size: 1em;
-}
-
-#stats img {
-	width: 50%;
-	opacity: 0.20;
-}
-
 /* ------------- Portrait ------------- */
 
 #portrait {
@@ -109,17 +120,6 @@ h1, h2, h3, h4, h5, h6 {
 	align-items: center;
 }
 
-#name {
-	padding: 0.5em 2em;
-	box-sizing: border-box;
-	border-bottom: 1px solid black;
-	margin: 0;
-}
-
-#race {
-	margin: 0.5em 0;
-}
-
 /* ------------- Items ------------- */
 
 #items {
@@ -134,19 +134,8 @@ h1, h2, h3, h4, h5, h6 {
 	align-items: center;
 }
 
-#items h3 {
-	margin: 0.5em 0;
+#items h2 {
 	font-size: 1em;
-	padding: 0.5em 2em;
-	box-sizing: border-box;
-	border-bottom: 1px solid black;
-}
-
-#items img {
-	width: 50%;
-	opacity: 0.20;
-	justify-self: center;
-	flex: 1;
 }
 
 /* ------------- Spells ------------- */
