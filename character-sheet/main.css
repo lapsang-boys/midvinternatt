@@ -39,10 +39,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
+	display: flex;
+	justify-self: center;
 	padding: 0.5em 2em;
 	box-sizing: border-box;
 	border-bottom: 1px solid black;
 	margin: 0;
+	max-width: 100%;
 }
 
 h3 {
@@ -237,12 +240,16 @@ p {
 
 #spells {
 	grid-area: spells;
+	display: flex;
+	flex-direction: column;
 }
 
 /* ------------- Traits ------------- */
 
 #traits {
 	grid-area: traits;
+	display: flex;
+	flex-direction: column;
 }
 
 /* ============= Page 2 ============= */
@@ -254,6 +261,11 @@ p {
 	grid-template-areas:
 	"story notebook"
 	"inventory inventory";
+}
+
+#page2 > div {
+	display: flex;
+	flex-direction: column;
 }
 
 #story {
