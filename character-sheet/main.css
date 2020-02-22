@@ -51,6 +51,7 @@ section > div {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Cinzel';
+	font-weight: 400;
 }
 
 h2 {
@@ -65,12 +66,22 @@ h3 {
 	font-size: 1em;
 }
 
+h4 {
+	font-weight: 600;
+	margin: 0.5em 0 0;
+}
+
+/* ============= Paragraphs ============= */
+
+p {
+	margin: 0.5em 0;
+	font-size: 0.75em;
+}
+
 /* ============= Images ============= */
 
 .transparent-icon {
-	width: 50%;
 	opacity: 0.20;
-	flex: 1;
 }
 
 /* ============= Page 1 ============= */
@@ -78,10 +89,12 @@ h3 {
 #page1 {
 	grid-template-columns: 5fr 1fr 4fr;
 	grid-gap: 1em;
-	grid-template-rows: auto 1fr;
+	grid-template-rows: auto;
 	grid-template-areas:
 	  "portrait stats items"
-	  "spells persona persona";
+	  "persona persona spells"
+	  "persona persona traits"
+	  "alignment alignment traits";
 }
 
 /* ------------- Stats ------------- */
@@ -90,13 +103,17 @@ h3 {
 	grid-area: stats;
 	display: grid;
 	grid-template-rows: repeat(5, 1fr);
-	grid-row-gap: 1em;
+	grid-row-gap: 0.25em;
 }
 
 #stats > div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+#stats img {
+	width: 3em;
 }
 
 /* ------------- Portrait ------------- */
@@ -107,7 +124,7 @@ h3 {
 }
 
 #portrait img {
-	height: 100mm;
+	height: 90mm;
 	width: 100%;
 	max-width: 100%;
 	object-fit: cover;
@@ -138,22 +155,86 @@ h3 {
 	font-size: 1em;
 }
 
-/* ------------- Spells ------------- */
+#items img {
+	flex: 1;
+	width: 50%;
+}
 
-#spells {
-	grid-area: spells;
+/* ------------- Alignment ------------- */
+
+#alignment {
+	grid-area: alignment;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	grid-row-gap: 1em;
+	justify-items: center;
+	align-items: center;
+	font-size: 0.75em;
+}
+
+#alignment img {
+	width: 3em;
+}
+
+#alignment .axis-end {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#alignment .horizontal-line {
+	width: 100%;
+	height: 0;
+	border-bottom: 0.2em dashed black;
+	opacity: 0.2;
 }
 
 /* ------------- Persona ------------- */
 
 #persona {
 	grid-area: persona;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto repeat(4, 1fr);
+	grid-row-gap: 0.5em;
+}
+
+#persona h2 {
+	display: flex;
+	justify-self: center;
+}
+
+/* ------------- Spells ------------- */
+
+#spells {
+	grid-area: spells;
+}
+
+/* ------------- Traits ------------- */
+
+#traits {
+	grid-area: traits;
 }
 
 /* ============= Page 2 ============= */
 
 #page2 {
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
 	grid-gap: 1em;
+	grid-template-areas:
+	"story notebook"
+	"inventory inventory";
+}
+
+#story {
+	grid-area: story;
+}
+
+#notebook {
+	grid-area: notebook;
+}
+
+#inventory {
+	grid-area: inventory;
 }
