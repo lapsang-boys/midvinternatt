@@ -1,0 +1,94 @@
+body {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 1em;
+	justify-items: center;
+	font-family: sans-serif;
+}
+
+section {
+	position: relative;
+	display: grid;
+	/* Match a4 for printing */
+	width: 210mm;
+	height: 297mm;
+	padding: 2em;
+	box-sizing: border-box;
+}
+
+/* Temp styling for the "paper look" of the page */
+section {
+	border: 1px solid black;
+	border-radius: 25px;
+	overflow: hidden;
+	box-shadow: -8px 9px 16px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* Paper backround look */
+section::after {
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+	background-image: url("assets/paper-background.png");
+	opacity: 0.5;
+}
+
+section > div {
+	box-sizing: border-box;
+	border-radius: 1em;
+	padding: 1em;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 
+	0 0 0 4px #171314,
+	0 0 0 2px rgb(58, 36, 12),
+	-3px 3px 2px 2px #171314;
+}
+
+/* ============= Page 1 ============= */
+
+#page1 {
+	grid-template-columns: 5fr 1fr 4fr;
+	grid-gap: 1em;
+	grid-template-rows: auto 1fr;
+	grid-template-areas:
+	  "portrait stats items"
+	  "spells persona persona";
+}
+
+#stats {
+	grid-area: stats;
+}
+
+
+#portrait {
+	grid-area: portrait;
+}
+
+#portrait img {
+	width: 100%;
+	border-radius: 1em;
+}
+
+#items {
+	grid-area: items;
+}
+
+#spells {
+	grid-area: spells;
+}
+
+#persona {
+	grid-area: persona;
+}
+
+/* ============= Page 2 ============= */
+
+#page2 {
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-gap: 1em;
+}
