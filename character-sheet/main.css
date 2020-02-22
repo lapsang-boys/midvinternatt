@@ -62,7 +62,6 @@ h4 {
 /* ============= Paragraphs ============= */
 
 p {
-	margin: 0.5em 0;
 	font-size: 0.75em;
 }
 
@@ -251,24 +250,33 @@ p {
 /* ============= Page 2 ============= */
 
 #page2 {
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto repeat(2, 1fr);
 	grid-gap: 1em;
 	grid-template-areas:
-	"story notebook"
-	"inventory inventory";
-}
-
-#page2 > div {
-	display: grid;
-	grid-template-columns: 1fr;
+	"story"
+	"notebook"
+	"inventory";
 }
 
 /* ------------- Background ------------- */
 
 #story {
 	grid-area: story;
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-gap: 1em;
 }
+
+#story h2 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+#story h4 {
+	margin: 1em 0 0.5em;
+}
+
 
 /* --- Alignment --- */
 
@@ -302,10 +310,14 @@ p {
 
 #notebook {
 	grid-area: notebook;
+	display: grid;
+	grid-template-columns: 1fr;
 }
 
 /* ------------- Inventory ------------- */
 
 #inventory {
 	grid-area: inventory;
+	display: grid;
+	grid-template-columns: 1fr;
 }
