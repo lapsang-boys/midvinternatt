@@ -227,6 +227,10 @@ p {
 	grid-column-end: 3;
 }
 
+#spells h4 {
+	margin: 0.5em 0;
+}
+
 #spells .icon {
 	display: flex;
 	flex-direction: column;
@@ -240,7 +244,7 @@ p {
 }
 
 #spells .icon img {
-	width: 2em;
+	width: 3em;
 }
 
 /* ------------- Traits ------------- */
