@@ -18,6 +18,7 @@ section {
 
 /* Temp styling for the "paper look" of the page */
 section {
+	margin: 5em;
 	border: 1px solid black;
 	border-radius: 25px;
 	overflow: hidden;
@@ -47,6 +48,7 @@ h2 {
 	border-bottom: 1px solid black;
 	margin: 0;
 	max-width: 100%;
+	text-align: center;
 }
 
 h3 {
@@ -168,6 +170,10 @@ p {
 	font-size: 1.25em;
 }
 
+#title h2 {
+	max-width: 85%;
+}
+
 /* ------------- Items ------------- */
 
 #items {
@@ -197,7 +203,7 @@ p {
 	grid-area: persona;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: auto repeat(4, 1fr);
+	grid-template-rows: auto;
 	grid-row-gap: 0.5em;
 }
 
@@ -213,6 +219,7 @@ p {
 	display: grid;
 	grid-template-columns: auto 1fr;
 	align-items: center;
+	font-size: 0.85em;
 }
 
 #spells h2 {
@@ -255,8 +262,8 @@ p {
 	grid-gap: 1em;
 	grid-template-areas:
 	"story"
-	"notebook"
-	"inventory";
+	"inventory"
+	"notebook";
 }
 
 /* ------------- Background ------------- */
