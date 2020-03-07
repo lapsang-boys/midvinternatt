@@ -1,0 +1,37 @@
+{
+	"Name": "Vladimir Wilhelm Kurst",
+	"Race": "Människa",
+	"Profession": "Prisjägare",
+	"PersonalityTraits": "Talar inte utan anledning. Fördomar sparar tid; dömande. Nyttomaximerande för sin egen vinning. Respekt går hand i hand med nytta. Preussiskt disciplinerad.",
+	"DrivingForce": "Med pengar hade det gått att förhindra. Jag och min syster ska bli fria till slut.",
+	"CornerStone": "Alla människor har inte lika värde.",
+	"Flaws": "Låter inte någon komma tillräckligt nära. Vänder kappan efter vinden.",
+	"Spells": [
+		{
+			"Title": "Djävlens snara",
+			"IconPath": "assets/fragrance.svg",
+			"Description": "Datura, en växt med hemska hallucinogena egenskaper och svår att kontrollera. Vlad slänger en flaska i golvet som förgiftar alla i hans omgivning, inklusive han själv. Kända symptom är förvirring, försämrad reaktionsförmåga, andnöd och delerium."
+		},
+		{
+			"Title": "Blodhund",
+			"IconPath": "assets/blood-hound.svg",
+			"Description": "Människor har alla en unik doft som de avger. Vlad kan likt en blodhund spåra dessa lukter och unikt identifiera dem."
+		},
+		{
+			"Title": "Avväpna",
+			"IconPath": "assets/disarm.svg",
+			"Description": "En prisjägare av rang. Bäst betalt ges för de byten som fångas levande, vilket gjort att Vlad bemästrat konsten att avväpna intet ont anande individer."
+		}
+	],
+	"Background": [
+		"Hans föräldrar var botaniker och hade en fridfylld barndom. Vlad och hans äldre syster Bianca var nära vänner trots deras stora åldersskillnad.",
+		"Dessa dagar tog slut när hans far skickades ut i kriget, och deras mor blev sängliggandes kort därefter. Fadern överlevde, men hans själ gjorde dessvärre inte det; flaskan blev hans enda vän. Skulderna växte på hög och Vlad växte upp i samma takt. Han och Bianca behövde ständigt göra sitt yttersta för att försörja familjen, men inget kunde släcka deras faders törst.",
+		"En dag när Vlad kommer hem, finner han huset länsat och hans far full på golvet. Vlad lyckas få ur några ord ur sin nästintill medvetslösa far. Fadern erkänner att han sålt alla deras ägodelar och Bianca. Vlad brister ut i vrede och slår ihjäl sin egen far. På senare år har Vlad insett att hans far hade nog gett upp och ville ta livet av sig, men inte vågade.",
+		"Bianca såldes till Grevens son, men familjens skulder var långt ifrån betalda. Vlad tog jobbet som legoknekt hos greven för att köpa deras frihet. Efter många år som legoknekt gick Vlad över till att jobba som prisjägare. Ett mer riskfyllt job som betalade därefter.",
+		"Vad han alltid har blundat för är att skulden är betald för länge sedan, men han kommer aldrig bli fri från sina inre demoner.",
+		"Vlad har aldrig fått något gratis."
+	],
+	"Belief": "Ateist, men kristen om någon frågar.",
+	"Languages": "Ryska, Latin och Nordiska.",
+	"Traits": "Flinka fingrar, identifiera lögnare, svärdet är en förlängning av hans arm, botaniskt kunnig, ovanligt bra luktsinne, packmästare, nykterist, kan inte simma, förvånansvärt bra lokal sinne, morgonpigg."
+}

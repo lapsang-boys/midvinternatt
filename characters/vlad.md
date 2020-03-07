@@ -26,7 +26,7 @@ _Brister_:           Låter inte någon komma tillräckligt nära. Vänder kappa
 _Förmågor_:
 - **Djävlens snara** Datura, en växt med hemska hallucinogena egenskaper och svår att kontrollera. Vlad slänger en flaska i golvet som förgiftar alla i hans omgivning, inklusive han själv. Kända symptom är förvirring, försämrad reaktionsförmåga, andnöd och delerium.
 - **Blodhund** Människor har alla en unik doft som de avger. Vlad kan likt en blodhund spåra dessa lukter och unikt identifiera dem.
-- **Avväpna** En prisjägare av rang. Bäst betalt ges för de byten som fångas levande, vilket gjort att Vlad bemästrat konsten att avväpna inte ont anande individer.
+- **Avväpna** En prisjägare av rang. Bäst betalt ges för de byten som fångas levande, vilket gjort att Vlad bemästrat konsten att avväpna intet ont anande individer.
 
 _Färdigheter_:       Flinka fingrar. Identifiera lögnare. Svärdet är en förlängning av hans arm. Botaniskt kunnig. Ovanligt bra luktsinne. Packmästare. Nykterist. Äter bara kött. Kan inte simma. Förvånansvärt bra lokal sinne. Morgonpigg.
 _Bakground_:

@@ -46,8 +46,8 @@
 			</div>
 
 			<div id="title">
-				<h2>Vladimir Wilhelm Kurst</h2>
-				<h3>Människa - Prisjägare</h3>
+				<h2>{{ .Name }}</h2>
+				<h3>{{ .Race }} - {{ .Profession }}</h3>
 			</div>
 		</div>
 
@@ -66,40 +66,31 @@
 			<h2>Personlighet</h2>
 			<div>
 				<h4>Personlighetsdrag</h4>
-				<p>Talar inte utan anledning. Fördomar sparar tid; dömande. Nyttomaximerande för sin egen vinning.
-					Respekt går hand i hand med nytta. Preussiskt disciplinerad.</p>
+				<p>{{ .PersonalityTraits }}</p>
 			</div>
 			<div>
 				<h4>Drivkraft</h4>
-				<p>Med pengar hade det gått att förhindra. Jag och min syster ska bli fria till slut.</p>
+				<p>{{ .DrivingForce }}</p>
 			</div>
 			<div>
 				<h4>Grundpelare</h4>
-				<p>Alla människor har inte lika värde.</p>
+				<p>{{ .CornerStone }}</p>
 			</div>
 			<div>
 				<h4>Brister</h4>
-				<p>Låter inte någon komma tillräckligt nära. Vänder kappan efter vinden.</p>
+				<p>{{ .Flaws }}</p>
 			</div>
 		</div>
 
 		<div id="spells">
 			<h2>Förmågor</h2>
+			{{- range .Spells }}
 			<div class="icon">
-				<h4>Djävlens snara</h4>
-				<img src="assets/fragrance.svg">
+				<h4>{{ .Title }}</h4>
+				<img src="{{ .IconPath }}">
 			</div>
-			<p>Datura, en växt med hemska hallucinogena egenskaper och svår att kontrollera. Vlad slänger en flaska i golvet som förgiftar alla i hans omgivning, inklusive han själv. Kända symptom är förvirring, försämrad reaktionsförmåga, andnöd och delerium.</p>
-			<div class="icon">
-				<h4>Blodhund</h4>
-				<img src="assets/blood-hound.svg">
-			</div>
-			<p>Människor har alla en unik doft som de avger. Vlad kan likt en blodhund spåra dessa lukter och unikt identifiera dem.</p>
-			<div class="icon">
-				<h4>Avväpna</h4>
-				<img src="assets/disarm.svg">
-			</div>
-			<p>En prisjägare av rang. Bäst betalt ges för de byten som fångas levande, vilket gjort att Vlad bemästrat konsten att avväpna intet ont anande individer.</p>
+			<p>{{ .Description }}</p>
+			{{- end }}
 		</div>
 	</section>
 
@@ -109,44 +100,18 @@
 			<h2>Historia</h2>
 			<div>
 				<h4>Bakgrund</h4>
-				<p>
-					Hans föräldrar var botaniker och hade en fridfylld barndom. Vlad och hans äldre syster Bianca var nära vänner trots deras stora åldersskillnad.
-				</p>
-				<p>
-					Dessa dagar tog slut när hans far skickades ut i kriget, och deras mor blev sängliggandes kort därefter. Fadern överlevde, men hans själ gjorde dessvärre inte det; flaskan blev hans enda vän. Skulderna växte på hög och Vlad växte upp i samma takt. Han och Bianca behövde ständigt göra sitt yttersta för att försörja familjen, men inget kunde släcka deras faders törst.
-				</p>
-				<p>
-					En dag när Vlad kommer hem, finner han huset länsat och hans far full på golvet. Vlad lyckas få ur några ord ur sin nästintill medvetslösa far. Fadern erkänner att han sålt alla deras ägodelar och Bianca. Vlad brister ut i vrede och slår ihjäl sin egen far. På senare år har Vlad insett att hans far hade nog gett upp och ville ta livet av sig, men inte vågade.
-				</p>
-				<p>
-					Bianca såldes till Grevens son, men familjens skulder var långt ifrån betalda. Vlad tog jobbet som legoknekt hos greven för att köpa deras frihet. Efter många år som legoknekt gick Vlad över till att jobba som prisjägare. Ett mer riskfyllt job som betalade därefter.
-				</p>
-				<p>
-					Vad han alltid har blundat för är att skulden är betald för länge sedan, men han kommer aldrig bli fri från sina inre demoner.
-				</p>
-				<p>
-					Vlad har aldrig fått något gratis.
-				</p>
+				{{- range .Background }}
+				<p>{{ . }}</p>
+				{{- end }}
 			</div>
 			<div>
 				<h4>Tro</h4>
-				<p>Ateist, men kristen om någon frågar.</p>
+				<p>{{ .Belief }}</p>
 				<h4>Språk</h4>
-				<p>Ryska, Latin och Nordiska.</p>
+				<p>{{ .Languages }}</p>
 				<div id="traits">
 					<h4>Färdigheter</h4>
-					<p>
-						Flinka fingrar,
-						identifiera lögnare,
-						<b><i>svärdet är en förlängning av hans arm</i></b>,
-						botaniskt kunnig,
-						ovanligt bra luktsinne,
-						packmästare,
-						nykterist,
-						kan inte simma,
-						förvånansvärt bra lokal sinne,
-						morgonpigg.
-					</p>
+					<p>{{ .Traits }}</p>
 				</div>
 				<h4>Förbund</h4>
 				<div id="alignment">
